@@ -1,4 +1,4 @@
-﻿
+﻿@model Aplication.estudos.japagay.Models.Cadastro
 
 @{
     ViewData["Title"] = "Login page";
@@ -14,9 +14,9 @@
         
      <form class="formulario mt-5" method="post">
         <div class="d-flex flex-column">
-            <label class="form-label" for="Nome">Usuario</label>
+            <label class="form-label" name="Nome">Usuario</label>
             <input class="form-control  form-text form" type="text" name="Nome" placeholder="Digite seu usuario" />
-            <label class="form-label mt-3 " for="Senha">Senha</label>
+            <label class="form-label mt-3 " name="Senha">Senha</label>
             <input class="form-control form" type="password" name="Senha" placeholder="Digite sua senha" />
             <div class=" checkbox mt-2">
                 <input type="checkbox" id="checkbox" name="Manter">
