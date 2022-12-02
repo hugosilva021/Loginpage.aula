@@ -33,7 +33,7 @@ namespace Aplication.estudos.japagay.Controllers
             }
 
             ViewModel.Nome = "japagay";
-            return View(ViewModel);
+            return View();
             
         }
 
