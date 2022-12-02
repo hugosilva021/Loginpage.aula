@@ -12,7 +12,7 @@ namespace Aplication.estudos.japagay.Controllers
         {
             _logger = logger;
         }
-
+        //test
         public IActionResult Index()
         {
             return View();
