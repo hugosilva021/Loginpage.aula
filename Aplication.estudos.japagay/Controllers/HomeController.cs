@@ -18,6 +18,8 @@ namespace Aplication.estudos.japagay.Controllers
             return View();
         }
 
+        //test hugo viado
+
         //[HttpPost]
         //public IActionResult Cadastrar()
         //{
