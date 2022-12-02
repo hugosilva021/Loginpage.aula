@@ -46,6 +46,8 @@ namespace Aplication.estudos.japagay.Controllers
             return View();
         }
 
+        //fdfdf
+
         public IActionResult Privacy()
         {
             return View();
