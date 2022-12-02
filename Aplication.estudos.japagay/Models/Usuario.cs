@@ -2,11 +2,11 @@
 
 namespace Aplication.estudos.japagay.Models
 {
-    public class Cadastro
+    public class Usuario
     {
         [Required]
         [StringLength(11)]
-        public string numero { get; set; }
+        public string CPF { get; set; }
         [Required]
         public DateTime Nascimento { get; set; }
         //[RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage =

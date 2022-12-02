@@ -33,21 +33,26 @@ namespace Aplication.estudos.japagay.Controllers
         //}
 
         [HttpPost]
-        //public IActionResult Cadastrar(Cadastro ViewModel)
-        //{
-        //    if(ModelState.IsValid)
-        //    {
-        //        return RedirectToAction("Index");
-        //    }
+        public IActionResult Cadastrar(Usuario ViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
 
-        //    ViewModel.Nome = "japagay";
-        //    return View();
+            ViewModel.Nome = "japagay";
+            return View();
 
-        //}
+        }
 
 
         [HttpGet]
         public IActionResult Cadastrar()
+        {
+            return View();
+        }
+
+        public IActionResult Profile()
         {
             return View();
         }
@@ -58,6 +63,8 @@ namespace Aplication.estudos.japagay.Controllers
         {
             return View();
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

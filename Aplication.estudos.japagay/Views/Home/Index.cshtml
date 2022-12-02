@@ -1,4 +1,4 @@
-﻿@model Aplication.estudos.japagay.Models.Cadastro
+﻿@model Aplication.estudos.japagay.Models.Usuario
 
 @{
     ViewData["Title"] = "Login page";
@@ -20,7 +20,7 @@
             <input class="form-control form" type="password" name="Senha" placeholder="Digite sua senha" />
             <div class=" checkbox mt-2">
                 <input type="checkbox" id="checkbox" name="Manter">
-                <p class="">Continuar conectado!</p>
+                <p class="m-2">Continuar conectado.</p>
             </div>
             
         </div>
@@ -31,7 +31,7 @@
         <input class="btn buton mt-1" type="submit" />
         <div class="container-fluid d-flex justify-content-center align-text-bottom ">
 
-            <a class="mt-2 text-decoration-none" href="/home/Cadastrar">Crie uma conta clicando aqui</a>
+            <a class="mt-2 card-link" href="/home/Profile">Crie uma conta clicando aqui</a>
         </div>
      </form>
 </div>
