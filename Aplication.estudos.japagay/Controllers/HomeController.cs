@@ -17,6 +17,10 @@ namespace Aplication.estudos.japagay.Controllers
         {
             //vfdasv
             //;vdfds
+            var test = 22;
+            var nome = "ajsadcsa";
+
+
             return View();
         }
 
@@ -38,7 +42,7 @@ namespace Aplication.estudos.japagay.Controllers
 
         //    ViewModel.Nome = "japagay";
         //    return View();
-            
+
         //}
 
 
