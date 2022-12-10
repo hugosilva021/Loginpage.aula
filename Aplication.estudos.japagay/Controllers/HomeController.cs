@@ -12,36 +12,33 @@ namespace Aplication.estudos.japagay.Controllers
         {
             _logger = logger;
         }
-        //test
-        public IActionResult Index()
+
+        
+        public  IActionResult Index()
         {
-            //vfdasv
-            //;vdfds
-            var test = 22;
-            var nome = "ajsadcsa";
+            
 
-
+            
             return View();
         }
 
-        //test hugo viado dois 
 
-        //[HttpPost]
-        //public IActionResult Cadastrar()
-        //{
-        //    return View();
-        //}
 
         [HttpPost]
-        public IActionResult Cadastrar(Usuario ViewModel)
+        [ValidateAntiForgeryToken]
+        public IActionResult Cadastrar(Usuario usuario)
         {
-            if (ModelState.IsValid)
-            {
-                return RedirectToAction("Index");
-            }
 
-            ViewModel.Nome = "japagay";
-            return View();
+
+           
+            
+                var appCadastro = new AppCadastro();
+                appCadastro.Inserir(usuario);
+                return RedirectToAction("Index");
+            
+
+
+            return View(usuario);
 
         }
 

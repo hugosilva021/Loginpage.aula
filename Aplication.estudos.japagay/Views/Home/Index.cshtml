@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Login page";
-    
+
 }
 
 <div class=" login  ">
@@ -12,12 +12,12 @@
         </svg>
      </div>
         
-     <form class="formulario mt-5" method="post">
+     <form class="formulario mt-5" action="" method="post">
         <div class="d-flex flex-column">
             <label class="form-label" name="Nome">Usuario</label>
             <input class="form-control  form-text form" type="text" name="Nome" placeholder="Digite seu usuario" />
             <label class="form-label mt-3 " name="Senha">Senha</label>
-            <input class="form-control form" type="password" name="Senha" placeholder="Digite sua senha" />
+            <input class="form-control form" type="password" name="Senha" value="" placeholder="Digite sua senha" />
             <div class=" checkbox mt-2">
                 <input type="checkbox" id="checkbox" name="Manter">
                 <p class="m-2">Continuar conectado.</p>
@@ -31,7 +31,7 @@
         <input class="btn buton mt-1" type="submit" />
         <div class="container-fluid d-flex justify-content-center align-text-bottom ">
 
-            <a class="mt-2 card-link" href="/home/Profile">Crie uma conta clicando aqui</a>
+            <a class="mt-2 card-link" href="/home/Cadastrar">Crie uma conta clicando aqui</a>
         </div>
      </form>
 </div>

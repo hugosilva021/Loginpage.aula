@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace Aplication.estudos.japagay.Models
 {
     public class Usuario
@@ -7,14 +8,20 @@ namespace Aplication.estudos.japagay.Models
         [Required]
         [StringLength(11)]
         public string CPF { get; set; }
+
         [Required]
+        
         public DateTime Nascimento { get; set; }
+
         //[RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$", ErrorMessage =
         //   "Números e caracteres especiais não são permitidos no nome.")]
+        [Required]
         public string? Nome { get; set; }
-        [Required(ErrorMessage = "Informe o seu email")]
-        [EmailAddress(ErrorMessage ="email invalido")]
+
+        [Required]
         //[RegularExpression(".+\\@.+\\..+", ErrorMessage = "Informe email válido...")]
-        public string? Email { get; set; }
+        public string Email { get; set; }
+        [Required]
+        public string Password { get; set; }
     }
 }
